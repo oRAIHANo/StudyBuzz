@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number_system</title>
+    <link rel="stylesheet" href="sol.css">
+    <script src="ans.js"></script>
+</head>
+<body>
+<div id="design-1">
+    <div class="button1"><h1>NUMBER SYSTEM</h1></div>
+    <div class="design">
+        <p><b>1. The difference between the squares of two consecutive odd integers is always divisible by:</b></p>
+        <br>
+        <p class="alt1">a. 3</p>
+        <br>
+        <p class="alt2">b. 7</p>
+        <br>
+        <p class="alt1">c. 6</p>
+        <br>
+        <p class="alt2">d. 8</p>
+        <button id="sol1"  class="sol" onclick="solution1()">Solution</button>
+        <p id="para1" class="para">
+                Let the two consecutive odd integers be (2x + 1) and (2x + 3)
+
+
+                Then, (2x + 3)2 - (2x + 1)2 = (2x + 3 + 2x + 1) (2x + 3 - 2x - 1) = (4x + 4)(2)
+
+                
+                = 8 (x + 1), which is always divisible by 8
+        </p>
+        <br>
+    </div><br>
+    <div class="design">
+        <p><b>2. How many of the following numbers are divisible by 3 but not by 9. 4320, 2343, 3474, 4131, 5286, 5340, 6336, 7347, 8115, 9276</b></p>
+        <br>
+        <p class="alt1">a. None</p>
+        <br>
+        <p class="alt2">b. 7</p>
+        <br>
+        <p class="alt1">c. 6</p>
+        <br>
+        <p class="alt2">d. 5</p>
+        <button id="sol2"  class="sol" onclick="solution2()">Solution</button>
+        <p id="para2" class="para">Taking the sum of the digits, we have :
+
+            S1 = 9, S2 = 12, S3 = 18, S4 = 9, S5 = 21, S6 = 12, S7 = 18, S8 = 21, S9 = 15, S10 = 24.
+
+            Clearly, S2, S5, S6, S8, S9, S10 are all divisible by 3 but not by 9.
+
+            So, the number of required numbers = 6.</p><br>
+    </div><br>
+    <div class="design">
+        <p><b>3. If p and q are the two digits of the number 653pq such that this number is divisible by 80, then p+q is equal to :</b></p>
+        <br>
+        <p class="alt1">a. 3</p>
+        <br>
+        <p class="alt2">b. 2</p>
+        <br>
+        <p class="alt1">c. 6</p>
+        <br>
+        <p class="alt2">d. 4</p>
+        <button id="sol3"  class="sol" onclick="solution3()">Solution</button>
+        <p id="para3" class="para">Since 653xy is divisible by 5 as well as 2, so y = 0.
+
+            Now, 653x0 must be divisible by 8.
+
+            So, 3x0 must be divisible by 8. This happens when x = 2
+
+            x + y = (2 + 0) = 2.</p><br>
+    </div><br>
+    <div class="design">
+        <p><b>4. What should be the maximum value of Q in the following equation?
+            5P9 – 7Q2 + 9R6 = 823</b></p>
+            <br>
+        <p class="alt1">a. 5</p>
+        <br>
+        <p class="alt2">b. 7</p>
+        <br>
+        <p class="alt1">c. 6</p>
+        <br>
+        <p class="alt2">d. 9</p>
+        <button id="sol4"  class="sol" onclick="solution4()">Solution</button>
+        <p id="para4" class="para"> 1 1
+            5 P 9
+         + 9 R 6
+         -  7 Q 2
+            8 2 3
+         What should be the maximum value of B in the following equation?
+         5P9 – 7Q2 + 9R6 = 823
+         We may represent the given sum, as shown.
+         
+         1 + P + R - Q = 12
+         P + R - Q = 11
+         
+         
+         Giving the maximum values to P and R, i.e.
+         
+         P = 9 and R = 9, we get Q = 7.</p><br>
+    </div><br>
+    <div class="design">
+        <p><b>5. If -1 ≤ a ≤ 2 and 1 ≤ b ≤ 3, then least possible value of (2a – 3b) is:</b></p>
+        <br>
+        <p class="alt1">a. -11</p>
+        <br>
+        <p class="alt2">b. -3</p>
+        <br>
+        <p class="alt1">c. -4</p>
+        <br>
+        <p class="alt2">d. -5</p>
+        <button id="sol5" class="sol"  onclick="solution5()">Solution</button>
+        <p id="para5" class="para">-1 ≤ a; so a = -1
+
+            b ≤ 3; so b = 3
+            
+            Now, 2a – 3b = -2 - 9 = -11
+            
+            Therefore, the least value is -11</p><br>
+    </div><br>
+    <div class="design">
+        <p><b>6. A girl multiplies 987 by a certain number and obtains 559981 as her answer. If in the answer, both 9’s are wrong but the other digits are correct, then the correct answer will be</b></p>
+        <br>
+        <p class="alt1">a. 553681</p>
+        <br>
+        <p class="alt2">b. 555181</p>
+        <br>
+        <p class="alt1">c. 555681</p>
+        <br>
+        <p class="alt2">d. 556581</p>
+        <button id="sol6"  class="sol" onclick="solution6()">Solution</button>
+        <p id="para6" class="para">987 = 3 x 7 x 47.
+
+            So, required number must be divisible by each one of 3, 7, 47.
+            
+            553681 and 555181 are not divisible by 3. While 556581 is not divisible by 7.
+        
+            Correct answer is 555681.</p><br>
+    </div><br>
+    <div class="design">
+        <p><b>7. The sum of first 49 natural numbers is ?</b></p>
+        <br>
+        <p class="alt1">a. 1280</p>
+        <br>
+        <p class="alt2">b. 2070</p>
+        <br>
+        <p class="alt1">c. 1225</p>
+        <br>
+        <p class="alt2">d. 1215</p>
+        <button id="sol7"  class="sol" onclick="solution7()">Solution</button>
+        <p id="para7" class="para">We know that : (1 + 2 + 3 + ...... + n) = n(n + 1)/2
+
+           (1 + 2 + 3 + ..... + 49) = 49 x 50/2  = 1225</p><br>
+    </div><br>
+    <div class="design">
+        <p><b>8. One-quarter of one-seventh of a land is sold for Rs. 30,000. What is the value of an eight thirty-fifth of load?</b></p>
+        <br>
+        <p class="alt1">a. Rs. 1,92,2300</p>
+        <br>
+        <p class="alt2">b. Rs. 1,92,2450</p>
+        <br>
+        <p class="alt1">c. Rs. 1,92,2400</p>
+        <br>
+        <p class="alt2">d. Rs. 1,92,2000</p>
+        <button id="sol8"  class="sol" onclick="solution8()">Solution</button>
+        <p id="para8" class="para">One-quarter of one-seventh = 1/4 x 1/7
+            = 1/28
+            Now, 1/28 of a land costs = Rs. 30,000
+            Thus, 8/35 of the land will cost = 30,000 x 28 x 8/35
+            = Rs. 1,92,2000.</p><br>
+    </div><br>
+    <div class="design">
+        <p><b>9. If the number 653ab is divisible by 90, then (a + b) = ?</b></p>
+        <br>
+        <p class="alt1">a. 2</p>
+        <br>
+        <p class="alt2">b. 3</p>
+        <br>
+        <p class="alt1">c. 4</p>
+        <br>
+        <p class="alt2">d. 6</p>
+        <button id="sol9"  class="sol" onclick="solution9()">Solution</button>
+        <p id="para9" class="para">90 = 10 x 9
+            Clearly, 653ab is divisible by 10, so b = 0
+            Now, 653a0 is divisible by 9.
+            So, (6 + 5 + 3 + a + 0) = (14 + a) is divisible by 9. So, a = 4.
+            Hence, (a + b) = (4 + 0) = 4.</p><br>
+    </div><br>
+    <div class="design">
+        <p><b>10. If (64)s<sup>2</sup> - (36)<sup>2</sup> = 20 x a, then a = ? </b></p>
+        <br>
+        <p class="alt1">a. 70</p>
+        <br>
+        <p class="alt2">b. 120</p>
+        <br>
+        <p class="alt1">c. 180</p>
+        <br>
+        <p class="alt2">d. 140</p>
+        <button id="sol10"  class="sol" onclick="solution10()">Solution</button>
+        <p id="para10" class="para">20 x a = (64 + 36)(64 - 36) = 100 x 28
+
+            a = 100 x 28/20 = 140</p><br>
+    </div><br>
+    <div class="design">
+        <p><b>11. How many prime numbers exist in 67 x 353 x 1110 ?</b></p>
+        <br>
+        <p class="alt1">a. 30 prime number</p>
+        <br>
+        <p class="alt2">b. 29 prime number</p>
+        <br>
+        <p class="alt1">c. 27 prime number</p>
+        <br>
+        <p class="alt2">d. 31 prime number</p>
+        <button id="sol11" class="sol"  onclick="solution11()">Solution</button>
+        <p id="para11" class="para">=(2 x 3)7 x (5 x 7)3 x 1110
+            =27 x 37 x 53 x 73 x 1110
+            Thus, there are (7 + 7 + 3 + 3 + 10) = 30 prime number</p><br>
+    </div><br>
+    <div class="design">
+        <p><b>12. The difference between two numbers is 2395. When the larger number is divided by the smaller one, the quotient is 6 and the remainder is 15. The smaller number is</b></p>
+        <br>
+        <p class="alt1">a. 70</p>
+        <br>
+        <p class="alt2">b. 120</p>
+        <br>
+        <p class="alt1">c. 180</p>
+        <br>
+        <p class="alt2">d. 140</p>
+        <button id="sol12"  class="sol" onclick="solution12()">Solution</button>
+        <p id="para12" class="para">20 x a = (64 + 36)(64 - 36) = 100 x 28
+
+            a = 100 x 28/20 = 140</p><br>
+            
+    </div><br>
+    <div class="design">
+        <p><b>13. If x is a whole number, then x²(x² - 1) is always divisible by</b></p>
+        <br>
+        <p class="alt1">a. 12-x</p>
+        <br>
+        <p class="alt2">b. Multiple of 12</p>
+        <br>
+        <p class="alt1">c. 12</p>
+        <br>
+        <p class="alt2">d. 24</p>
+        <button id="sol13"  class="sol" onclick="solution13()">Solution</button>
+        <p id="para13" class="para">Putting x = 2,we get 2²(2² - 1) = 12.
+            checking with other integers, the above equation always gives a value which is a multiple of 12,
+            So, x²(x² - 1) is always divisible by 12.</p> <br>
+    </div><br>
+    <div class="design">
+        <p><b>14. How many terms are there in 2, 4, 8, 16,..., 1024? </b></p>
+        <br>
+        <p class="alt1">a. 14</p>
+        <br>
+        <p class="alt2">b. 11</p>
+        <br>
+        <p class="alt1">c. 12</p>
+        <br>
+        <p class="alt2">d. 10</p>
+        <button id="sol14"  class="sol" onclick="solution14()">Solution</button>
+        <p id="para14" class="para">2, 4, 8, 16, ..., 1024 is a G.P with a =2
+            and r =4/2 =2
+            Let the number of terms be n. Then
+             2 x 2 ^n-1 = 1024
+            or 2^n-1 = 512 = 2^9
+            Thus n - 1 =9
+            n= 10</p>
+            <br>
+    </div><br>
+    <div class="design">
+        <p><b>15. A number is divided by 221, the remainder is 64. If the number be divided by 13 then remainder will be</b></p>
+        <br>
+        <p class="alt1">a. 1</p>
+        <br>
+        <p class="alt2">b. 2</p>
+        <br>
+        <p class="alt1">c. 3</p>
+        <br>
+        <p class="alt2">d. 4</p>
+        <button id="sol15" class="sol" onclick="solution15()">Solution</button>
+        <p id="para15" class="para">Let the given number when divided by 119 
+            gives x as quotient and 19 as remainder. Then
+            Given number = 119x + 19
+            = 17 x 7x + 17 + 2
+            = 17 (7x + 1) + 2
+            so, the required remainder is 2.</p>
+            <br>
+    </div><br>
+</div>
+</body>
+</html>

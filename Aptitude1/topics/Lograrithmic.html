@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logarithms</title>
+    <link rel="stylesheet" href="sol.css">
+    <script src="ans.js"></script>
+</head>
+<body>
+<div id="design-1">
+    <br>
+    <div class="button1"><h1>LOGARITHM</h1></div>
+    <div class="design">
+        <p><b>1. If ( log <sub>5</sub> 5) (log <sub>4</sub> 9) (log <sub>3</sub> 2) is equal to                                                                                     </b></p>
+        <br>
+        <p class="alt1">a. 2</p>
+        <br>
+        <p class="alt2">b. 1</p>
+        <br>
+        <p class="alt1">c. 6</p>
+        <br>
+        <p class="alt2">d. 8</p>
+        <button id="sol1"  class="sol" onclick="solution1()">Solution</button>
+        <p id="para1" class="para">
+            1
+        </p><br>
+    </div><br>
+    <div class="design">
+        <p><b>2. If logxy = 100 and log3x = 10, then the value of y is:</b></p>
+        <br>
+        <p class="alt1">a. 3<sup>10</sup></p>
+        <br>
+        <p class="alt2">b. 3<sup>100</sup></p>
+        <br>
+        <p class="alt1">c. 3<sup>1000</sup></p>
+        <br>
+        <p class="alt2">d. 3<sup>10000</sup></p>
+        <button id="sol2"  class="sol" onclick="solution2()">Solution</button>
+        <p id="para2" class="para">log3x = 10
+            Hence,x= 310
+            logx y = 100
+            y =x100 = (310)100= y = 31000</p>
+        <br>
+    </div><br>
+    <div class="design">
+        <p><b>3. Simplify :(log 75/16-2 log 5/9+log 32/243)</b></p>
+        <br>
+        <p class="alt1">a. 1</p>
+        <br>
+        <p class="alt2">b. 1.2</p>
+        <br>
+        <p class="alt1">c. 2</p>
+        <br>
+        <p class="alt2">d. 2.02</p>
+        <button id="sol3"  class="sol" onclick="solution3()">Solution</button>
+        <p id="para3" class="para">
+            log 75/16-2 log 5/9+log 32/243
+= log 75/16-log(5/9)2+log32/243
+= log 75/16-log25/81+log 32/243
+= log(75/16*32/243*81/25)=log 2
+        </p><br>
+    </div><br>
+    <div class="design">
+        <p><b>4. Log <sub>10</sub> 3+log<sub>10</sub>(4x+1)=log<sub>10</sub> (x+1)+1</b></p>
+            <br>
+        <p class="alt1">a. 2/7</p>
+        <br>
+        <p class="alt2">b. 7/2</p>
+        <br>
+        <p class="alt1">c. 3/7</p>
+        <br>
+        <p class="alt2">d. 7/3</p>
+        <button id="sol4"  class="sol" onclick="solution4()">Solution</button>
+        <p id="para4" class="para">
+            log10 3+log10 (4x+1)=log10 (x+1)+1
+Log10 3+log10 (4x+1)=log10 (x+1)+log10 (x+1)+log10 10
+Log10 (3(4x+1))=log10 (10(x+1))=3(4x+1)=10(x+1)=12x+3
+
+=10x+10
+
+=2x=7=x=7/2
+        </p><br>
+    </div><br>
+    <div class="design">
+        <p><b>5. [1/log <sub>xy</sub> (xyz)+1/log<sub>yz</sub>(xyz)+1/log<sub>xz</sub>(xyz)]</b></p>
+        <br>
+        <p class="alt1">a. 1</p>
+        <br>
+        <p class="alt2">b. 2</p>
+        <br>
+        <p class="alt1">c. 3</p>
+        <br>
+        <p class="alt2">d. 4</p>
+        <button id="sol5" class="sol"  onclick="solution5()">Solution</button>
+        <p id="para5" class="para">
+            logxyz xy+ logxyz yz+ logxyz zx
+
+
+=logxyz (xy*yz*zx)=logxyz (xyz)2
+
+
+2logxyz(xyz)=2*1=2
+        </p><br>
+    </div><br>
+    <div class="design">
+        <p><b>6. If log <sub>10</sub> 5 = x, then log2 1250 is</b></p>
+        <br>
+        <p class="alt1">a. 3 + 1/x</p>
+        <br>
+        <p class="alt2">b. 3 - 1/x</p>
+        <br>
+        <p class="alt1">c. 2 + 1/x</p>
+        <br>
+        <p class="alt2">d. 2 - 1/x</p>
+        <button id="sol6"  class="sol" onclick="solution6()">Solution</button>
+        <p id="para6" class="para">3 + 1/x</p><br>
+    </div><br>
+    <div class="design">
+        <p><b>7. The number log2 7 is</b></p>
+        <br>
+        <p class="alt1">a. an integer</p>
+        <br>
+        <p class="alt2">b. a rational number</p>
+        <br>
+        <p class="alt1">c. a irrational number</p>
+        <br>
+        <p class="alt2">d. a prime number</p>
+        <button id="sol7"  class="sol" onclick="solution7()">Solution</button>
+        <p id="para7" class="para">
+            an irrational number
+        </p><br>
+    </div><br>
+    <div class="design">
+        <p><b>8. Let x > 1, y > 1, z > 1 and x2 = yz. The value of  is</b></p>
+        <br>
+        <p class="alt1">a. 9</p>
+        <br>
+        <p class="alt2">b. 8</p>
+        <br>
+        <p class="alt1">c. 10</p>
+        <br>
+        <p class="alt2">d. 25</p>
+        <button id="sol8"  class="sol" onclick="solution8()">Solution</button>
+        <p id="para8" class="para">
+            9
+        </p><br>
+    </div><br>
+    <div class="design">
+        <p><b>9. log ab – log | b | =</b></p>
+        <br>
+        <p class="alt1">a. loga</p>
+        <br>
+        <p class="alt2">b. log |a|</p>
+        <br>
+        <p class="alt1">c. -loga</p>
+        <br>
+        <p class="alt2">d. None of these</p>
+        <button id="sol9"  class="sol" onclick="solution9()">Solution</button>
+        <p id="para9" class="para">
+            log|a|
+        </p><br>
+    </div><br>
+    <div class="design">
+        <p><b>10.  If x2 + y2 = 6xy, then 2log (x – y) is</b></p>
+        <br>
+        <p class="alt1">a. log x +  log y + 3 log 2</p>
+        <br>
+        <p class="alt2">b. log x +  log y + 2 log 2</p>
+        <br>
+        <p class="alt1">c. log x +  log y + 4 log 2</p>
+        <br>
+        <p class="alt2">d. log x +  log y + 5 log 2</p>
+        <button id="sol10"  class="sol" onclick="solution10()">Solution</button>
+        <p id="para10" class="para">
+            log x +  log y + 2 log 2
+        </p><br>
+    </div><br>
+    
+</div>
+</body>
+</html>

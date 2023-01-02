@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter and Number Series</title>
+    <link rel="stylesheet" href="sol.css">
+    <script src="ans.js"></script>
+</head>
+<body>
+<div id="design-1">
+    <div class="button1"><h1>LETTER & NUMBER SERIES</h1></div>
+
+    <div class="design">
+        <p><b>1. SCD, TEF, UGH, ____, WKL</b></p>
+        <br>
+        <p class="alt1">a. CMN</p>
+        <br>
+        <p class="alt2">b. UJI</p>
+        <br>
+        <p class="alt1">c. VIJ</p>
+        <br>
+        <p class="alt2">d. IJT</p><br>
+        <button id="sol1"  class="sol" onclick="solution1()">Solution</button>
+        <p id="para1" class="para"><b>Option C is Correct.</b>
+
+Explantion: There are two alphabetical series here. The first series is with the first letters only: STUVW. The second series involves the remaining letters: CD, EF, GH, IJ, KL.
+
+        </p><br>
+    </div><br>
+    <div class="design">
+        <p><b>2. 	FAG, GAF, HAI, IAH, ____</b></p>
+        <br>
+        <p class="alt1">a. JAK</p>
+        <br>
+        <p class="alt2">b. HAL</p>
+        <br>
+        <p class="alt1">c. HAK</p>
+        <br>
+        <p class="alt2">d. JAI</p><br>
+        <button id="sol2"  class="sol" onclick="solution2()">Solution</button>
+        <p id="para2" class="para"><b>Option A is Correct.</b>
+
+Explanation: The middle letters are static, so concentrate on the first and third letters. The series involves an alphabetical order with a reversal of the letters.
+
+        </p><br>
+    </div><br>
+    <div class="design">
+        <p><b>3. ELFA, GLHA, ILJA, _____, MLNA</b></p>
+        <br>
+        <p class="alt1">a. OLPA</p>
+        <br>
+        <p class="alt2">b. KLMA</p>
+        <br>
+        <p class="alt1">c. LLMA</p>
+        <br>
+        <p class="alt2">d. KLLA</p><br>
+        <button id="sol3"  class="sol" onclick="solution3()">Solution</button>
+        <p id="para3" class="para"><b>Option D is Correct.</b>
+
+Explanation: The second and forth letters in the series, L and A, are static. The first and third letters consist of an alphabetical order beginning with the letter E.
+
+</p><br>
+    </div><br>
+    <div class="design" >
+        <p><b>4. 	CMM, EOO, GQQ, _____, KUU</b></p>
+            <br>
+        <p class="alt1">a. GRR</p>
+        <br>
+        <p class="alt2">b. GSS</p>
+        <br>
+        <p class="alt1">c. ISS</p>
+        <br>
+        <p class="alt2">d. ITT</p><br>
+        <button id="sol4"  class="sol" onclick="solution4()">Solution</button>
+        <p id="para4" class="para"><b>Option C is Correct.</b>
+
+Explanation: The first letters are in alphabetical order with a letter skipped in between each segment: C, E, G, I, K. The second and third letters are repeated; they are also in order M, O, Q, S, U.
+
+</p><br>
+    </div><br>
+    <div class="design">
+        <p><b>5. QPO, NML, KJI, _____, EDC</b></p>
+        <br>
+        <p class="alt1">a. HGF</p>
+        <br>
+        <p class="alt2">b. CAB</p>
+        <br>
+        <p class="alt1">c. 	JKL</p>
+        <br>
+        <p class="alt2">d. GHI</p><br>
+        <button id="sol5" class="sol"  onclick="solution5()">Solution</button>
+        <p id="para5" class="para"><b>Option B is Correct.</b>
+
+Explanation: This series consists of letters in a reverse alphabetical order.
+</p><br>
+    </div><br>
+    <div class="design">
+        <p><b>6. JAK, KBL, LCM, MDN, _____
+
+
+
+</b></p>
+        <br>
+        <p class="alt1">a. OEP</p>
+        <br>
+        <p class="alt2">b. NEO</p>
+        <br>
+        <p class="alt1">c. MEN</p>
+        <br>
+        <p class="alt2">d. 	PFQ</p><br>
+        <button id="sol6"  class="sol" onclick="solution6()">Solution</button>
+        <p id="para6" class="para"><b>Option B is Correct.</b>
+
+Explanation: This is an alternating series in alphabetical order. The middle letters follow the order ABCDE. The first and third letters are alphabetical beginning with J. 
+
+</p><br>
+    </div><br>
+    <div class="design">
+        <p><b>7. BCB, DED, FGF, HIH, ___
+
+
+
+</b></p>
+        <br>
+        <p class="alt1">a. JKJ</p>
+        <br>
+        <p class="alt2">b. HJH</p>
+        <br>
+        <p class="alt1">c. IJI</p>
+        <br>
+        <p class="alt2">d. JHJ</p><br>
+        <button id="sol7"  class="sol" onclick="solution7()">Solution</button>
+        <p id="para7" class="para"><b>Option A is Correct.</b>
+
+Explanation: This series consists of a simple alphabetical order with the first two letters of all segments: B, C, D, E, F, G, H, I, J, K. The third letter of each segment is a repetition of the first letter.
+
+</p><br>
+    </div><br>
+    <div class="design">
+        <p><b>8. QAR, RAS, SAT, TAU, _____
+
+</b></p>
+        <br>
+        <p class="alt1">a. UAV</p>
+        <br>
+        <p class="alt2">b. UAT</p>
+        <br>
+        <p class="alt1">c. TAS</p>
+        <br>
+        <p class="alt2">d. TAT</p><br>
+        <button id="sol8"  class="sol" onclick="solution8()">Solution</button>
+        <p id="para8" class="para"><b>Option D is Correct.</b>
+
+Explanation: In this series, the third letter is repeated as the first letter of the next segment. The middle letter, A, remains static. The third letters are in alphabetical order, beginning with R.
+
+</p><br>
+    </div><br>
+    <div class="design">
+        <p><b>9. DEF, DEF2, DE2F2, _____, D2E2F3
+
+
+
+</b></p>
+        <br>
+        <p class="alt1">a. DEF3</p>
+        <br>
+        <p class="alt2">b. D3EF3</p>
+        <br>
+        <p class="alt1">c. D2E3F</p>
+        <br>
+        <p class="alt2">d. D2E2F2</p><br>
+        <button id="sol9"  class="sol" onclick="solution9()">Solution</button>
+        <pid="para9" class="para"><b>Option D is Correct.</b>
+
+Explanation: In this series, the letters remain the same: DEF.
+
+
+</p><br>
+    </div><br>
+    <div class="design">
+        <p><b>10. ZA5, Y4B, XC6, W3D, _____
+
+
+
+ </b></p>
+        <br>
+        <p class="alt1">a. E7V</p>
+        <br>
+        <p class="alt2">b. V2E</p>
+        <br>
+        <p class="alt1">c. VE5</p>
+        <br>
+        <p class="alt2">d. VE7</p><br>
+        <button id="sol10"  class="sol" onclick="solution10()">Solution</button>
+        <p id="para10" class="para"><b>Option D is Correct.</b>
+
+Explanation: There are three series to look for here. The first letters are alphabetical in reverse: Z, Y, X, W, V. The second letters are in alphabetical order, beginning with A.
+
+</p><br>
+    </div><br>
+   
+</div>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compound_interest</title>
+    <link rel="stylesheet" href="sol.css">
+    <script src="ans.js"></script>
+</head>
+<body>
+<div id="design-1">
+    <div class="button1"><h1>INTEREST</h1></div>
+    <div class="design">
+        <p><b>1. In what time will Rs. 1000 become Rs. 1331 at 10% per annum compounded annually?</b></p>
+        <br>
+        <p class="alt1">a. 3year</p>
+        <br>
+        <p class="alt2">b. 7year</p>
+        <br>
+        <p class="alt1">c. 1year</p>
+        <br>
+        <p class="alt2">d. 6year</p>
+        <button id="sol1"  class="sol" onclick="solution1()">Solution</button>
+        <p id="para1" class="para">Principal = Rs. 1000; Amount = Rs. 1331; Rate = 10% p.a. Let the time be n years.
+            Then, [ 1000 (1+ (10/100))n ] = 1331 or (11/10)n = (1331/1000) = (11/10)3
+            
+            
+            n = 3 years.</p>
+    <br>
+    </div><br>
+    <div class="design">
+        <p><b>2. If Rs. 500 amounts to Rs. 583.20 in two years compounded annually, find the rate of interest per annum.        </b></p>
+        <br>
+        <p class="alt1">a. 7%p.a</p>
+        <br>
+        <p class="alt2">b. 8%p.a</p>
+        <br>
+        <p class="alt1">c. 9%p.a</p>
+        <br>
+        <p class="alt2">d. 5%p.a</p>
+        <button id="sol2"  class="sol" onclick="solution2()">Solution</button>
+        <p id="para2" class="para">Principal = Rs. 500; Amount = Rs. 583.20; Time = 2 years.                                                                            
+            Let the rate be R% per annum..
+ '        
+            Then,      [ 500 (1+(R/100)2 ] = 583.20 or [ 1+ (R/100)]2 = 5832/5000 = 11664/10000
+ 
+ 
+                             [ 1+ (R/100)]2 = (108/100)2 or 1 + (R/100) = 108/100 or R = 8
+ 
+        </p>
+    <br>
+    </div><br>
+    <div class="design">
+        <p><b>3. If the simple interest on a sum of money at 5% per annum for 3 years is Rs. 1200, find the compound interest on the same sum for the same period at the same rate.</b></p>
+        <br>
+        <p class="alt1">a. 1261</p>
+        <br>
+        <p class="alt2">b. 1234</p>
+        <br>
+        <p class="alt1">c. 1256</p>
+        <br>
+        <p class="alt2">d. 1287</p>
+        <button id="sol3"  class="sol" onclick="solution3()">Solution</button>
+        <p id="para3" class="para">Clearly, Rate = 5% p.a., Time = 3 years, S.I.= Rs. 1200.    
+
+
+            So principal=RS [100*1200]/3*5=RS 8000
+            
+            
+            Amount = Rs. 8000 x [1 +5/100]^3 - = Rs. 9261.
+            
+            
+             C.I. = Rs. (9261 - 8000) = Rs. 1261.</p><br>
+    </div><br>
+    <div class="design">
+        <p><b>4. Find the compound interest on Rs. 10,000 in 2 years at 4% per annum, the interest being cmpounded half-yearly.</b></p>
+            <br>
+        <p class="alt1">a. 823</p>
+        <br>
+        <p class="alt2">b. 824.32</p>
+        <br>
+        <p class="alt1">c. 798.67</p>
+        <br>
+        <p class="alt2">d. 800</p>
+        <button id="sol4"  class="sol" onclick="solution4()">Solution</button>
+        <p id="para4" class="para"> Principal = Rs. 10000; Rate = 2% per half-year; Time = 2 years = 4 half-years.         
+
+
+            Amount =Rs [10000 * (1+(2/100))4] = Rs(10000 * (51/50) * (51/50) * (51/50) * (51/50))          
+     
+     
+                        = Rs. 10824.32.
+     
+     
+            :. C.I. = Rs. (10824.32 - 10000) = Rs. 824.32.</p><br>
+    </div><br>
+    <div class="design">
+        <p><b>5. Find the compound interest on Rs. 16,000 at 20% per annum for 9 months, Compounded quarterly.</b></p>
+        <br>
+        <p class="alt1">a. 2344</p>
+        <br>
+        <p class="alt2">b. 2455</p>
+        <br>
+        <p class="alt1">c. 3244</p>
+        <br>
+        <p class="alt2">d. 2522</p>
+        <button id="sol5" class="sol"  onclick="solution5()">Solution</button>
+        <p id="para5" class="para">Principal = Rs. 16000; Time = 9 months =3 quarters;
+
+
+            Rate = 20% per annum = 5% per quarter.
+
+
+            Amount = Rs. [16000 x (1+(5/100))3] = Rs. 18522.
+
+
+                        = Rs. (18522 - 16000) = Rs. 2522.</p><br>
+    </div><br>
+    <div class="design">
+        <p><b>6. Find compound interest on Rs. 7500 at 4% per annum for 2 years, compounded annually.</b></p>
+        <br>
+        <p class="alt1">a. 512</p>
+        <br>
+        <p class="alt2">b. 612</p>
+        <br>
+        <p class="alt1">c. 712</p>
+        <br>
+        <p class="alt2">d. 812</p>
+        <button id="sol6"  class="sol" onclick="solution6()">Solution</button>
+        <p id="para6" class="para">Amount = Rs [7500*(1+4/100)2] = Rs (7500 * (26/25) * (26/25)) = Rs. 8112.        
+
+
+            therefore, C.I. = Rs. (8112 - 7500) = Rs. 612.
+      
+        </p><br>
+    </div><br>
+    <div class="design">
+        <p><b>7. Find compound interest on Rs. 8000 at 15% per annum for 2 years 4 months, compounded annually.</b></p>
+        <br>
+        <p class="alt1">a. 3109</p>
+        <br>
+        <p class="alt2">b. 3901</p>
+        <br>
+        <p class="alt1">c. 1309</p>
+        <br>
+        <p class="alt2">d. 3210</p>
+        <button id="sol7"  class="sol" onclick="solution7()">Solution</button>
+        <p id="para7" class="para">Time = 2 years 4 months = 2(4/12) years = 2(1/3) years.                                                                                     Amount = Rs'. [8000 X (1+­(15/100))2 X (1+((1/3)*15)/100)]
+
+
+            =Rs. [8000 * (23/20) * (23/20) * (21/20)]
+
+
+            = Rs. 11109.                            .
+
+
+ :. C.I. = Rs. (11109 - 8000) = Rs. 3109.</p><br>
+    </div><br>
+    <div class="design">
+        <p><b>8. If the compound interest on a certain sum at 16 (2/3)% to 3 years is Rs.1270, find the simple interest on the same sum at the same rate and f or the same period.</b></p>
+        <br>
+        <p class="alt1">a. 1080</p>
+        <br>
+        <p class="alt2">b. 1089</p>
+        <br>
+        <p class="alt1">c. 2345</p>
+        <br>
+        <p class="alt2">d. 1908</p>
+        <button id="sol8"  class="sol" onclick="solution8()">Solution</button>
+        <p id="para8" class="para">Let the sum be Rs. x. Then,
+
+
+            C.I. = [ x * (1 + (( 50/(3*100))3 - x ] = ((343x / 216) - x) = 127x / 216
+         
+         
+            127x /216 = 1270 or x = (1270 * 216) / 127 = 2160.
+         
+         
+            Thus, the sum is Rs. 2160
+         
+         
+             S.I. = Rs ( 2160 * (50/3) * 3 * (1 /100 ) ) = Rs. 1080.</p><br>
+    </div><br>
+    <div class="design">
+        <p><b>9. The difference between the compound interest and simple interest on a certain sum at 10% per annum for 2 years is Rs. 631. Find the sum.</b></p>
+        <br>
+        <p class="alt1">a. 53100</p>
+        <br>
+        <p class="alt2">b. 52900</p>
+        <br>
+        <p class="alt1">c. 63100</p>
+        <br>
+        <p class="alt2">d. 64500</p>
+        <button id="sol9"  class="sol" onclick="solution9()">Solution</button>
+        <p id="para9" class="para">Let the sum be Rs. x. Then,
+
+
+            C.I. = x ( 1 + ( 10 /100 ))2 - x = 21x / 100 ,
+
+
+            S.I. = (( x * 10 * 2) / 100) = x / 5
+
+
+            (C.I) - (S.I) = ((21x / 100 ) - (x / 5 )) = x / 100
+
+
+             ( x / 100 ) = 632 , x = 63100.
+
+
+             Hence, the sum is Rs.63,100.</p><br>
+    </div><br>
+    <div class="design">
+        <p><b>10. The difference between the compound interest and the simple interest accrued on an amount of Rs. 18,000 in 2 years was Rs. 405. What was the rate of interest p.c.p.a. ?</b></p>
+        <br>
+        <p class="alt1">a. 12%</p>
+        <br>
+        <p class="alt2">b. 10%</p>
+        <br>
+        <p class="alt1">c. 13%</p>
+        <br>
+        <p class="alt2">d. 15%</p>
+        <button id="sol10"  class="sol" onclick="solution10()">Solution</button>
+        <p id="para10" class="para">Let the rate be R% p.a. then,
+
+
+            [ 18000 ( 1 + ( R / 100 )2 ) - 18000 ] - ((18000 * R * 2) / 100 ) = 405
+            
+            
+            18000 [ ( 100 + (R / 100 )2 / 10000) - 1 - (2R / 100 ) ] = 405
+            
+            
+            18000[( (100 + R ) 2 - 10000 - 200R) / 10000 ] = 405
+            
+            
+            9R2 / 5 = 405 , R2 =((405 * 5 ) / 9) = 225
+            
+            
+            R = 15.
+            
+            
+            Rate = 15%.</p><br>
+    </div class="design"><br>
+</div>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>l.c.m_and_h.c.f</title>
+    <link rel="stylesheet" href="sol.css">
+    <script src="ans.js"></script>
+</head>
+<body>
+<div id="design-1">
+    <br>
+    <div class="button1"><h1>LCM & HCF</h1></div>
+    <div class="design">
+        <p><b>1. H.C.F. of 513, 1134 and 1215 is ____________</b></p>
+        <br>
+        <p class="alt1">a. 18</p>
+        <br>
+        <p class="alt2">b. 27</p>
+        <br>
+        <p class="alt1">c. 33</p>
+        <br>
+        <p class="alt2">d. 36</p>
+        <button id="sol1"  class="sol" onclick="solution1()">Solution</button>
+        <p id="para1" class="para">Finding H.C.F. by division method:
+
+            Problems On LCM And HCF
+            
+            H.C.F. of 513, 1134 and 1215 = 3 × 3 × 3 = 27.</p>
+        <br>
+    </div>
+    <div class="design">
+        <p><b>2. The greatest number which on dividing 1657 and 2037 leaves remainders 6 and 5 respectively, is</b></p>
+        <br>
+        <p class="alt1">a. 127</p>
+        <br>
+        <p class="alt2">b. 305</p>
+        <br>
+        <p class="alt1">c. 235</p>
+        <br>
+        <p class="alt2">d. 123</p>
+        <button id="sol2"  class="sol" onclick="solution2()">Solution</button>
+        <p id="para2" class="para">Required number = H.C.F. of (1657 - 6) and (2037 - 5)
+            = H.C.F. of 1651 and 2032 = 127.</p>
+        <br>
+    </div>
+    <div class="design">
+        <p><b>3.  The H.C.F. of two numbers is 23 and the other two factors of their L.C.M. are 13 and 14. The larger of the two numbers is:</b></p>
+        <br>
+        <p class="alt1">a. 276</p>
+        <br>
+        <p class="alt2">b. 299</p>
+        <br>
+        <p class="alt1">c. 322</p>
+        <br>
+        <p class="alt2">d. 345</p>
+        <button id="sol3"  class="sol" onclick="solution3()">Solution</button>
+        <p id="para3" class="para">Clearly, the numbers are (23 x 13) and (23 x 14).
+            Larger number = (23 x 14) = 322.</p><br>
+    </div>
+    <div class="design">
+        <p><b>4. HCF of 3/16, 5/12, 7/8 is:</b></p>
+            <br>
+        <p class="alt1">a. 2/47</p>
+        <br>
+        <p class="alt2">b. 3/47</p>
+        <br>
+        <p class="alt1">c. 1/48</p>
+        <br>
+        <p class="alt2">d. 5/48</p>
+        <button id="sol4"  class="sol" onclick="solution4()">Solution</button>
+        <p id="para4" class="para">HCF of numerators = 1
+            LCM of denominators = 48
+            => 1/48.</p><br>
+    </div>
+    <div class="design">
+        <p><b>5.  Two numbers are in the ratio of 15:11. If their H.C.F. is 13, find the numbers.</b></p>
+        <br>
+        <p class="alt1">a. 122 and 80</p>
+        <br>
+        <p class="alt2">b. 87 and 190</p>
+        <br>
+        <p class="alt1">c. 195 and 143</p>
+        <br>
+        <p class="alt2">d. None of these.</p>
+        <button id="sol5" class="sol"  onclick="solution5()">Solution</button>
+        <p id="para5" class="para">Let the required numbers be 15.x and 11x.
+            Then, their H.C.F. is x. So, x = 13.
+            The numbers are (15 x 13 and 11 x 13) i.e., 195 and 143.</p><br>
+    </div>
+    <div class="design">
+        <p><b>6. Find the largest number of four digits exactly divisible by 12,15,18 and 27.</b></p>
+        <br>
+        <p class="alt1">a. 5500</p>
+        <br>
+        <p class="alt2">b. 9000</p>
+        <br>
+        <p class="alt1">c. 7300</p>
+        <br>
+        <p class="alt2">d. 9720</p>
+        <button id="sol6"  class="sol" onclick="solution6()">Solution</button>
+        <p id="para6" class="para">The Largest number of four digits is 9999.
+            Required number must be divisible by L.C.M. of 12,15,18,27 i.e. 540.
+            On dividing 9999 by 540,we get 279 as remainder.
+            Required number = (9999-279) = 9720.</p><br>
+    </div>
+    <div class="design">
+        <p><b>7. Find the greatest number that will divide 400, 435 and 541 leaving 9, 10 and 14 as remainders respectively</b></p>
+        <br>
+        <p class="alt1">a. 19</p>
+        <br>
+        <p class="alt2">b. 17</p>
+        <br>
+        <p class="alt1">c. 13</p>
+        <br>
+        <p class="alt2">d. 9</p>
+        <button id="sol7"  class="sol" onclick="solution7()">Solution</button>
+        <p id="para7" class="para">Answer will be HCF of (400-9, 435-10, 541-14)
+            HCF of (391, 425, 527) = 17</p><br>
+    </div>
+    <div class="design">
+        <p><b>8.  If LCM of two number is 693, HCF of two numbers is 11 and one number is 99, then find other</b></p>
+        <br>
+        <p class="alt1">a. 34</p>
+        <br>
+        <p class="alt2">b. 77</p>
+        <br>
+        <p class="alt1">c. 12</p>
+        <br>
+        <p class="alt2">d. 45</p>
+        <button id="sol8"  class="sol" onclick="solution8()">Solution</button>
+        <p id="para8" class="para">For any this type of question, remember
+            Product of two numbers = Product of their HCF and LCM
+            So Other number = 693×11/99 = 77.</p><br>
+    </div>
+    <div class="design">
+        <p><b>9. A, B and C start at the same time in the same direction to run around a circular stadium. A completes a round in 252 seconds, B in 308 seconds and c in 198 seconds, all
+            starting at the same point.</b></p>
+        <br>
+        <p class="alt1">a. 26 minutes and 18 seconds</p>
+        <br>
+        <p class="alt2">b. 42 minutes and 36 minutes</p>
+        <br>
+        <p class="alt1">c. 45 minutes</p>
+        <br>
+        <p class="alt2">d. 46 minutes and 12 seconds</p>
+        <button id="sol9"  class="sol" onclick="solution9()">Solution</button>
+        <p id="para9" class="para">L.C.M. of 252, 308 and 198 = 2772.
+            So, A, B and C will again meet at the starting point in 2772 sec. i.e., 46 min. 12 sec.</p><br>
+    </div>
+    <div class="design">
+        <p><b>10. Six bells commence tolling together and toll at intervals of 2, 4, 6, 8 10 and 12 seconds respectively. In 30 minutes, how many times do they toll together? </b></p>
+        <br>
+        <p class="alt1">a. 4</p>
+        <br>
+        <p class="alt2">b. 10</p>
+        <br>
+        <p class="alt1">c. 15</p>
+        <br>
+        <p class="alt2">d. 16</p>
+        <button id="sol10"  class="sol" onclick="solution10()">Solution</button>
+        <p id="para10" class="para">L.C.M. of 2, 4, 6, 8, 10, 12 is 120.
+             So, the bells will toll together after every 120 seconds(2 minutes). 
+             In 30 minutes, they will toll together30 + 1 = 16 times.</p><br>
+    </div>
+    <div class="design">
+        <p><b>11. Three number are in the ratio of 3 : 4 : 5 and their L.C.M. is 2400. Their H.C.F. is:</b></p>
+        <br>
+        <p class="alt1">a. 40</p>
+        <br>
+        <p class="alt2">b. 80</p>
+        <br>
+        <p class="alt1">c. 120</p>
+        <br>
+        <p class="alt2">d. 200</p>
+        <button id="sol11" class="sol"  onclick="solution11()">Solution</button>
+        <p id="para11" class="para">Let the numbers be 3x, 4x and 5x.
+            Then, their L.C.M. = 60x.So, 60x = 2400 or x = 40.
+            The numbers are (3 x 40), (4 x 40) and (5 x 40).
+            Hence, required H.C.F. = 40.</p><br>
+    </div>
+    <div class="design">
+        <p><b>12. P, Q and R start at the same time in the same direction to run around a circular stadium. P completes a round in 252 seconds, Q in 308 seconds and R in 198 seconds, all starting at the same point. After what time will they again at the starting point?</b></p>
+        <br>
+        <p class="alt1">a. 46 min 12 sec</p>
+        <br>
+        <p class="alt2">b. 52 min 36 sec</p>
+        <br>
+        <p class="alt1">c. 55 min</p>
+        <br>
+        <p class="alt2">d. 14 min</p>
+        <button id="sol12"  class="sol" onclick="solution12()">Solution</button>
+        <p id="para12" class="para">LCM of 252, 308 and 198 = 2772
+            So, A, B and C will again meet at the starting point in 2772 sec
+            = 2772/60 = 46 min 12 sec.</p><br>
+            
+    </div>
+    <div class="design">
+        <p><b>13. The greatest number which on dividing 1657 and 2037 leaves remainders 6 and 5 respectively, is:</b></p>
+        <br>
+        <p class="alt1">a. 123</p>
+        <br>
+        <p class="alt2">b. 127</p>
+        <br>
+        <p class="alt1">c. 235</p>
+        <br>
+        <p class="alt2">d. 305</p>
+        <button id="sol13"  class="sol" onclick="solution13()">Solution</button>
+        <p id="para13" class="para">Required number = H.C.F. of (1657 - 6) and (2037 - 5)
+            = H.C.F. of 1651 and 2032 = 127.</p> <br>
+    </div>
+    <div class="design">
+        <p><b>14. Three number are in the ratio of 3 : 4 : 5 and their L.C.M. is 2400. Their H.C.F. is: </b></p>
+        <br>
+        <p class="alt1">a. 40</p>
+        <br>
+        <p class="alt2">b. 80</p>
+        <br>
+        <p class="alt1">c. 120</p>
+        <br>
+        <p class="alt2">d. 200</p>
+        <button id="sol14"  class="sol" onclick="solution14()">Solution</button>
+        <p id="para14" class="para">Let the numbers be 3x, 4x and 5x.
+            Then, their L.C.M. = 60x.
+            So, 60x = 2400 or x = 40.
+            The numbers are (3 x 40), (4 x 40) and (5 x 40).
+            Hence, required H.C.F. = 40.</p>
+            <br>
+    </div>
+    <div class="design">
+        <p><b>15. The G.C.D of 1.08, 0.36 and 0.9 is</b></p>
+        <br>
+        <p class="alt1">a. 0.03</p>
+        <br>
+        <p class="alt2">b. 0.9</p>
+        <br>
+        <p class="alt1">c. 0.18</p>
+        <br>
+        <p class="alt2">d. 0.108</p>
+        <button id="sol15" class="sol" onclick="solution15()">Solution</button>
+        <p id="para15" class="para">Given numbers are 1.08 , 0.36 and 0.90.
+            H.C.F of 108 ,36 and 90 is 18.
+            ‹=› H.C.F of given numbers = 0.18.</p>
+            <br>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>queues</title>
+    <link rel="stylesheet" href="sol.css">
+</head>
+<body>
+    <div class="design">
+        <h1><u>Queue : Data Structure</u></h1>
+        <p class="font">
+            Queue is an abstract data structure, somewhat similar to Stacks. Unlike stacks, a queue is open at both its ends. One end is always used to insert data (enqueue) and the other is used to remove data (dequeue). Queue follows First-In-First-Out methodology, i.e., the data item stored first will be accessed first.
+        </p>
+        <div class="image"><img src="https://1.bp.blogspot.com/-Fx2bxQ5O47g/XUnUEsoaSqI/AAAAAAAAINQ/eqfMuM5M58cvTDvux3swjOeKmPVSieLLwCLcBGAs/w1200-h630-p-k-no-nu/queuedatastructure.png" style="max-width:100%;" alt="not available"></div>
+        <h2>Basic Operations:</h2>
+        <p class="font">
+            Queue operations may involve initializing or defining the queue, utilizing it, and then completely erasing it from the memory. Here we shall try to understand the basic operations associated with queues −
+            <ul class="font">
+                <li><b>Enqueue Operation: </b></li>
+                Queues maintain two data pointers, front and rear. Therefore, its operations are comparatively difficult to implement than that of stacks.
+            </ul>
+        </p>
+        <div class="unknown">
+            <div class="image"><img src="https://www.sitesbay.com/cpp-datastructure/images/queue-insert-item.gif" alt="not available"></div>
+        <p class="font">
+            The following steps should be taken to enqueue (insert) data into a queue −
+        </p>
+        <div class="diff-1">
+            <pre>
+                
+            if(rear==max-1) <br>
+                "overflow" <br>
+            else <br>
+                arr[max++]=val <br>
+            </pre>
+        </div><br>
+        
+        </div>
+        <p>
+            <ul class="font">
+                <li><b>Dequeue Operation: </b></li>
+                Accessing data from the queue is a process of two tasks − access the data where front is pointing and remove the data after access. The following steps are taken to perform dequeue operation −
+            </ul>
+        </p>
+        <div class="unknown">
+            <div class="image"><img src="https://cdn-images-1.medium.com/max/1600/1*UKVABqYxsiR6YvV2385nFQ.gif"  alt="not available"></div>
+        <div class="diff-1">
+            <pre>
+                if(front<0 || front >rear) <br>
+                    "underflow" <br>
+                else <br>
+                    front++; <br>
+            
+            </pre></div><br>
+        </div>
+    </div>
+</body>
+</html>

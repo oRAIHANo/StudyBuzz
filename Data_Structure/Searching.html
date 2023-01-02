@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>searching</title>
+    <link rel="stylesheet" href="sol.css">
+</head>
+<body>
+    <div class="design">
+        <h1>Searching</h1><br>
+        <p class="font">
+            To search an element(s) using the given index or by value.
+            There are two algorithms for searching are:
+            <ul class="font">
+                <li>Linear Search</li>
+                <li>Binary Search</li>
+            </ul>
+        </p><br>
+        <h2>Linear Search</h2><br>
+        <p class="font">
+            Linear search is also called as <b>sequential search algorithm</b>. It is the simplest searching algorithm. In Linear search, we simply traverse the list completely and match each element of the list with the item whose location is to be found. If the match is found, then the location of the item is returned; otherwise, the algorithm returns NULL.
+
+            It is widely used to search an element from the unordered list, i.e., the list in which items are not sorted. The worst-case time complexity of linear search is <b>O(n).</b>
+            <br><br>
+            The steps used in the implementation of Linear Search are listed as follows -
+            <ul class="font">
+                <li>First, we have to traverse the array elements using a for loop.</li>
+                <li>In each iteration of for loop, compare the search element with the current array element, and -
+                    <ul class="font">
+                        <li>If the element matches, then return the index of the corresponding array element.</li>
+                        <li>If the element does not match, then move to the next element.</li>
+                    </ul>
+                </li>
+                <li>If there is no match or the search element is not present in the given array, return -1.</li>
+            </ul>
+        </p><br>
+        <div class="image"><img src="https://www.tutorialspoint.com/data_structures_algorithms/images/linear_search.gif"style="max-width:100%;" alt="not available"></div><br>
+
+        <h2>Binary Search</h2>
+        <p class="font">
+            Binary search is the search technique that works efficiently on sorted lists. Hence, to search an element into some list using the binary search technique, we must ensure that the list is sorted.
+            <br>
+            Binary search follows the divide and conquer approach in which the list is divided into two halves, and the item is compared with the middle element of the list. If the match is found then, the location of the middle element is returned. Otherwise, we search into either of the halves depending upon the result produced through the match.
+        </p><br>
+        <p class="diff-1">
+            Binary_Search(a, lower_bound, upper_bound, val) // 'a' is the given array, 'lower_bound' is the index of the first array element, 'upper_bound' is the index of the last array element, 'val' is the value to search  <br>
+Step 1: set beg = lower_bound, end = upper_bound, pos = - 1  <br>
+Step 2: repeat steps 3 and 4 while beg <=end  <br>
+Step 3: set mid = (beg + end)/2  <br>
+Step 4: if a[mid] = val  <br>
+set pos = mid  <br>
+print pos  <br>
+go to step 6  <br>
+else if a[mid] > val<br>  
+set end = mid - 1  <br>
+else  <br>
+set beg = mid + 1 <br>  
+[end of if]  <br>
+[end of loop]  <br>
+Step 5: if pos = -1 <br> 
+print "value is not present in the array"  <br>
+[end of if]  <br>
+Step 6: exit  <br>
+        </p><br>
+        <div class="image"><img src="https://d18l82el6cdm1i.cloudfront.net/uploads/bePceUMnSG-binary_search_gif.gif" alt="not available"></div><br>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stacks</title>
+    <link rel="stylesheet" href="sol.css">
+</head>
+<body>
+    <div class="design">
+        <h1><u>Stack: Data Structure</u></h1>
+        <p class="font">
+            Stack is kind of data structure which allows operations on data only at one end. It allows access to the last inserted data only. Stack is also called LIFO (Last In First Out) data structure and Push and Pop operations are related in such a way that only last item pushed (added to stack) can be popped (removed from the stack).
+        </p>
+        <div class="image"><img src="https://th.bing.com/th/id/OIP.UwmoUHQQK1D7mXpIzCK57AHaD3?w=273&h=180&c=7&r=0&o=5&pid=1.7" style="max-width:100%;" alt="not available"></div><br>
+        <h2>Basic Operations:</h2>
+        <p class="font">
+            <ul class="font">
+                <li>Push Operation : </li>
+                Whenever an element is pushed into stack, stack stores that element at the top of the storage and increments the top index for later use. If storage is full then an error message is usually shown:
+            </ul>
+        </p>
+            <div class="image" id="outer"><img src="https://th.bing.com/th/id/R.41918c5729bb6e090b1bb8e2b5417910?rik=4ZA%2fTbohyNlH2Q&riu=http%3a%2f%2fwww.ablmcc.edu.hk%2f%7escy%2fCIT%2fstack-push.gif&ehk=KBNiJMwj7S%2bAYjrsiTlsca1xyFYjRHhoI268MRFQok8%3d&risl=&pid=ImgRaw&r=0" style="max-width:100%;" alt="not available"></div><br>
+            <p class="diff-1">
+                begin <br>
+                if stack is full <br>
+                   return <br>
+                endif <br>
+               else  <br>
+                increment top <br>
+                stack[top] assign value <br>
+               end else <br>
+               end procedure <br>
+            </p>
+        <p class="font">
+            <ul class="font">
+                <li>Pop Operation : </li>
+                Whenever an element is to be popped from stack, stack retrives the element from the top of the storage and decrements the top index for later use.
+            </ul>
+        </p>
+        <div class="image" id="outer"><img src="https://th.bing.com/th/id/R.a657a3391bf27c2135170c0eab8d3424?rik=0Px8FbyF%2faAFpg&riu=http%3a%2f%2fwww.thagomizer.com%2fimg%2fStackPop.gif&ehk=URh32oz%2bDdbAmnX0ui3pf2q2w34liuxXjO1GbNmAaYM%3d&risl=&pid=ImgRaw&r=0" style="max-width:100%;"></div><br>
+        <p class="diff-1">
+                begin <br>
+ if stack is empty <br>
+    return<br>
+ endif<br>
+else<br>
+ store value of stack[top]<br>
+ decrement top<br>
+ return value<br>
+end else<br>
+end procedure<br>
+        </p>
+    
+    </div>
+</body>
+</html>

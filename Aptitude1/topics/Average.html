@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>average</title>
+    <link rel="stylesheet" href="sol.css">
+    <script src="ans.js"></script>
+</head>
+<body>
+<div id="design-1">
+    <div class="button1"><h1>AVERAGE</h1></div>
+    <div class="design">
+        <p><b>1. In the India-Australia one day match, due to rain, India needed 324 runs in 48 overs to win. In initial 10 overs, the average scoring rate was 6, but in next 10 overs it increased to 8.5. It then declined to 5.5 in next 10 overs and again rose to 7 in next 10 overs. To win the match now what average is needed?</b></p>
+        <br>
+        <p class="alt1">a. 8.25</p>
+        <br>
+        <p class="alt2">b. 6.75</p>
+        <br>
+        <p class="alt1">c. 7.75</p>
+        <br>
+        <p class="alt2">d. 7</p>
+        <button id="sol1"  class="sol" onclick="solution1()">Solution</button>
+        <p id="para1" class="para">we need to see how many runs are scored in 40
+            scored in first 10 overs = 6 x 10 = 60
+            is scored in next 10 overs = 8.5 x 10 = 85
+            is scored in next 10 overs = 5.5 x 10 = 55
+            is scored in next 10 overs = 7 x 10 = 70
+            
+            runs scored in 40 overs = 270
+            needed = 324-270 = 54
+            sleft = 54/8 = 6.75
+        </p>
+        <br>   
+    </div>
+    <div class="design">
+        <p><b>2. Average age of 7 family members is 75 years. But average age of 6 of them is 74 years 6 months. What is the age of the 7th family member?
+        </b></p>
+        <br>
+        <p class="alt1">a. 75.5</p>
+        <br>
+        <p class="alt2">b. 78</p>
+        <br>
+        <p class="alt1">c. 68</p>
+        <br>
+        <p class="alt2">d. 80</p>
+        <button id="sol2"  class="sol" onclick="solution2()">Solution</button>
+        <p id="para2" class="para">78</p>
+        <br>
+    </div>
+    <div class="design">
+        <p><b>3. The average weight of 39 Students in a class is 23. Among them Sita is the heaviest while Tina is the lightest. If both of them are excluded from the class still the average remains same. The ratio of weight of Sita to Tina is 15:8.Then what is the weight of the Tina?</b></p>
+        <br>
+        <p class="alt1">a. 15</p>
+        <br>
+        <p class="alt2">b. 16</p>
+        <br>
+        <p class="alt1">c. 18</p>
+        <br>
+        <p class="alt2">d. 19</p>
+        <button id="sol3"  class="sol" onclick="solution3()">Solution</button>
+        <p id="para3" class="para">
+            16
+        </p><br>
+    </div>
+    <div class="design">
+        <p><b>4. A grocer has a sale of Rs 6435, Rs. 6927, Rs. 6855, Rs. 7230 and Rs. 6562 for 5 consecutive months. How much sale must he have in the sixth month so that he gets an average sale of Rs, 6500 ?</b></p>
+            <br>
+        <p class="alt1">a. 4991</p>
+        <br>
+        <p class="alt2">b. 5467</p>
+        <br>
+        <p class="alt1">c. 5987</p>
+        <br>
+        <p class="alt2">d. 6453</p>
+        <button id="sol4"  class="sol" onclick="solution4()">Solution</button>
+        <p id="para4" class="para"> 
+            Total sale for 5 months = Rs. (6435 + 6927 + 6855 + 7230 + 6562) = Rs. 34009.
+
+            Required sale = Rs.[(6500 x 6) - 34009]
+
+            = Rs. (39000 - 34009) 
+
+            = Rs.  4991.
+        </p><br>
+    </div>
+    <div class="design">
+        <p><b>5. The average of runs of a cricket player of 10 innings was 32. How many runs must he make in his next innings so as to increase his average of runs by 4 ?</b></p>
+        <br>
+        <p class="alt1">a. 76</p>
+        <br>
+        <p class="alt2">b. 79</p>
+        <br>
+        <p class="alt1">c. 85</p>
+        <br>
+        <p class="alt2">d. 89</p>
+        <button id="sol5" class="sol"  onclick="solution5()">Solution</button>
+        <p id="para5" class="para">
+            Average = total runs / no.of innings = 32 
+
+            So, total = Average x no.of innings = 32 x 10 = 320.
+            Now increase in avg = 4runs. So, new avg = 32+4 = 36runs 
+
+            Total runs = new avg x new no. of innings = 36 x 11 = 396 
+
+            Runs made in the 11th inning = 396 - 320 = 76
+        </p><br>
+    </div>
+    <div class="design">
+        <p><b>6. The average of 7 consecutive numbers is 20. The largest of these numbers is :</b></p>
+        <br>
+        <p class="alt1">a. 21</p>
+        <br>
+        <p class="alt2">b. 22</p>
+        <br>
+        <p class="alt1">c. 23</p>
+        <br>
+        <p class="alt2">d. 24</p>
+        <button id="sol6"  class="sol" onclick="solution6()">Solution</button>
+        <p id="para6" class="para">
+            Let the numbers be x, x + 1, x + 2,  x + 3, x + 4, x + 5 and x + 6,
+            Then   (x + (x + 1) + (x + 2) + (x + 3) + (x + 4) + (x + 5) + (x + 6)) / 7 = 20.
+            or  7x + 21 = 140 or 7x = 119 or x =17.
+            Latest number = x + 6 = 23.
+        </p><br>
+    </div>
+    <div class="design">
+        <p><b>7. A batsman makes a score of 87 runs in the 17th inning and thus increases his average by 3. Find his average after 17th inning?</b></p>
+        <br>
+        <p class="alt1">a. 39</p>
+        <br>
+        <p class="alt2">b. 49</p>
+        <br>
+        <p class="alt1">c. 59</p>
+        <br>
+        <p class="alt2">d. 69</p>
+        <button id="sol7"  class="sol" onclick="solution7()">Solution</button>
+        <p id="para7" class="para">
+            Let the average after 7th inning = x
+            Then average after 16th inning = x - 3
+            16(x-3)+87 = 17x 
+            x = 87 - 48 = 39
+        </p><br>
+    </div>
+    <div class="design">
+        <p><b>8. The average of 20 numbers is zero. Of them, at the most, how many may be greater than zero ?</b></p>
+        <br>
+        <p class="alt1">a. 0</p>
+        <br>
+        <p class="alt2">b. 1</p>
+        <br>
+        <p class="alt1">c. -1</p>
+        <br>
+        <p class="alt2">d. None</p>
+        <button id="sol8"  class="sol" onclick="solution8()">Solution</button>
+        <p id="para8" class="para">
+            Average of 20 numbers = 0. 
+            Sum of 20 numbers = (0 * 20) = 0. 
+            It is quite possible that 19 of these numbers may be positive and if their sum is a, then 20th number is (- a).
+
+
+        </p><br>
+    </div>
+    <div class="design">
+        <p><b>9. The average weight of 8 persons increases by 2.5 kg when a new person comes in place of one of them weighing 65 kg. What might be the weight of the new person ?</b></p>
+        <br>
+        <p class="alt1">a. 70kg</p>
+        <br>
+        <p class="alt2">b. 75kg</p>
+        <br>
+        <p class="alt1">c. 80kg</p>
+        <br>
+        <p class="alt2">d. 85kg</p>
+        <button id="sol9"  class="sol" onclick="solution9()">Solution</button>
+        <p id="para9" class="para">
+            Total weight increased = (8 x 2.5) kg = 20 kg.
+
+            Weight of new person = (65 + 20) kg = 85 kg.</p><br>
+    </div>
+    <div class="design">
+        <p><b>10. A pupil's marks were wrongly entered as 83 instead of 63. Due to that the average marks for the class got increased by half. The number of pupils in the class is : </b></p>
+        <br>
+        <p class="alt1">a. 45</p>
+        <br>
+        <p class="alt2">b. 40</p>
+        <br>
+        <p class="alt1">c. 39</p>
+        <br>
+        <p class="alt2">d. 37</p>
+        <button id="sol10"  class="sol" onclick="solution10()">Solution</button>
+        <p id="para10" class="para">
+            Let there be x pupils in the class.
+
+Total increase in marks = (x * 1/2) = x/2.
+
+x/2 = (83 - 63) => x/2 = 20 => x = 40.
+        </p><br>
+    </div>
+    
+</div>
+</body>
+</html>

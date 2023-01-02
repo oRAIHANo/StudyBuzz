@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of Data Structure</title>
+    <link rel="stylesheet" href="sol.css">
+</head>
+<body>
+    <div class="design">
+        <h1>Arrays</h1><br>
+        <p class="font">
+            Arrays a kind of data structure that can store a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type. <br>
+            Instead of declaring individual variables, such as number0, number1, ..., and number99, you declare one array variable such as numbers and use numbers[0], numbers[1], and ..., numbers[99] to represent individual variables. A specific element in an array is accessed by an index. <br>
+            All arrays consist of contiguous memory locations. The lowest address corresponds to the first element and the highest address to the last element. <br>
+        </p><br>
+        <div class="image"><img src="https://th.bing.com/th/id/OIP.lEw5vjjvScquEZOOh0lQ-QHaEA?w=311&h=180&c=7&r=0&o=5&pid=1.7" style="max-width:100%;" alt="not available"></div>
+        <br>
+        <h2>Declaring Arrays</h2><br>
+        <p class="font">
+            This is called a single-dimensional array. The arraySize must be an integer constant greater than zero and type can be any valid C data type. For example, to declare a 10-element array called balance of type double, use this statement −
+            Here balance is a variable array which is sufficient to hold up to 10 double numbers.
+            <p class="diff-1">
+                double balance[10];
+            </p>
+        </p>
+        <h2>Intializing Arrays</h2><br>
+        <p class="font">
+            You can initialize an array in C either one by one or using a single statement as follows −
+            <p class="diff-1">
+                double balance[5] = {1000.0, 2.0, 3.4, 7.0, 50.0};
+            </p>
+        </p>
+        <p class="font">
+            
+            The number of values between braces { } cannot be larger than the number of elements that we declare for the array between square brackets [ ].
+
+If you omit the size of the array, an array just big enough to hold the initialization is created. Therefore, if you write −
+<p class="diff-1">double balance[] = {1000.0, 2.0, 3.4, 7.0, 50.0};
+</p>
+        </p>
+    </div>
+</body>
+</html>

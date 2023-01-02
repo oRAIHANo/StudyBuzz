@@ -1,0 +1,88 @@
+*{
+    margin: 5px;
+    padding: 0;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+h2{
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+body {
+    background-color: #eee;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+margin-left:300px;
+margin-right:300px;
+}
+  
+#design-1{
+    display: grid;
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.button1 {
+    background-color: Black;
+    border: none;
+    color: white;
+    font-family:arial;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  
+  
+  }
+.design{
+    background-color: rgb(251, 248, 244);
+    border: 2px solid black;
+    overflow: hidden;
+    font-size: 1.5rem;
+}
+.para{
+    display: grid;
+    padding: 10px;
+}
+.sol{
+    margin: 5px;
+    padding: 5px;
+    height: 3rem;
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    padding: 0 0.9rem;
+    border-radius: 0.3rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-top: 0.06rem solid transparent;
+    color: black;
+    border-color: black;
+    cursor: pointer;
+}
+.sol:hover{
+    color: #fff;
+    background-color: black;
+}
+
+.alt1{
+    background-color: rgb(243, 238, 243);
+}
+.alt2{
+    background-color:rgba(227, 227, 227, 0.855);
+}
+@media screen and (max-width:708px) {
+    .design{
+        width: auto;
+    }
+}
